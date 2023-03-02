@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2023</title>
+    <style>
+html, body {
+  height: 100%;
+  width:  100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.words {
+  color: #ffffff;
+  font-size: 0;
+  line-height: 1;
+}
+.words span {
+  font-size: 120px;
+  display: inline-block;
+  animation: move 2s ease-in-out infinite;
+}
+.words span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.words span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.words span:nth-child(4) {
+  animation-delay: 1.3s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-25%, 0);
+  }
+  50% {
+    text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    transform: translate(33%, 0);
+  }
+}
+    </style>
+  </head>
+
+  <body>
+
+<div class="words words-1">
+  <a href="./art.html">
+    <span>D</span>
+    <span>O</span>
+  </a>
+</div>
+<div class="words words-1">
+  <a href="./art.html">
+    <span>A</span>
+    <span>M</span>
+    <span>A</span>
+    <span>Z</span>
+    <span>I</span>
+    <span>N</span>
+    <span>G</span>
+  </a>
+</div>
+<div class="words words-1">
+  <a href="./art.html">
+    <span>T</span>
+    <span>H</span>
+    <span>I</span>
+    <span>N</span>
+    <span>G</span>
+    <span>S</span>
+  </a>
+</div>
+
+  </body>
+</html>
